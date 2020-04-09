@@ -1,0 +1,150 @@
+When did the 13 American Colonies claim independence from England?
+August 2, 1776
+July 4, 1775
+June 14, 1776
+July 4, 1776
+Ulysses S. Grant appears on the front of which denomination of US currency?
+$50 Bill
+$2 Bill
+50 Cent Coin
+$10 Bill
+Which state is JFK buried in?
+Maryland
+Delaware
+Texas
+Virginia
+What city was the first capital of the United States?
+Washington D.C.
+Baltimore
+New York
+Boston
+Who was the first republican President of the U.S.?
+Andrew Jackson
+Theodore Roosevelt
+Abraham Lincoln
+John Adams
+What is the name of the longest road on campus?
+Centennial Way
+Ring Street
+Ring Road
+Cedar Dell Road
+Who is the Chancellor of uMassD?
+Peyton R. Helm
+Robert E. Johnson
+Peter L. Johnson
+Shannon Finning
+Which semester did the Cedar Dells get a security checkpoint installed?
+Fall 2017
+Spring 2018
+Fall 2018
+Spring 2017
+What is the ratio of male to female students at uMassD? (Male/Female)
+53/47
+50/50
+48/52
+56/44
+What is the total enrollment for 2019-2020 academic year?
+9,321
+7,538
+10,381
+8,513
+Which of the following languages are not defined as an OOP Language?
+C
+Java
+Python
+PHP
+Who is widely known as the “Father of Computer Science”?
+Clint Rogers
+Bill Gates
+Alan Turing
+Dennis Thompson
+What is the average time complexity of a merge sort algorithm?
+n * lg(n)
+(1/2)n * lg(n)
+2n
+n * (1/2)n
+Which company first developed the Java Programming Language?
+Sun Microsystems
+Netscape
+IBM
+Java Inc.
+How many pins does a traditional parallel port have in total?
+2
+4
+16
+25
+What is the most populated country in South America?
+Brazil
+Venezuela
+Colombia
+Argentina
+What is the largest country (by size) with no access to open ocean?
+Iran
+Kazakhstan
+Chad
+Laos
+Which country has the most natural lakes?
+Canada
+China
+United States
+Russia
+Which mountain’s peak is closest to the moon?
+Mount Everest
+Mount Chimborazo
+Mount Kilimanjaro
+K2
+Lake Titicaca sits on the border of which two countries?
+China and Russia
+Canada and the U.S.
+Brazil and Venezuela
+Peru and Bolivia
+How many suns does Luke’s home planet of Tatooine have in Star Wars?
+1
+2
+3
+4
+Aaron Sorkin won an Oscar for writing what 2010 drama about the creation of Facebook?
+The Rise of Zuckerberg
+The Social Network
+The Social Media
+FaceBook's Founding
+In the movie, “The Notebook”, how many letters did Noah write to Allie?
+20
+1000
+365
+100
+What substance is Han Solo frozen in during "the Empire Strikes Back"?
+Carbonite
+Liquid Nitrogen
+Ethanol
+Hydroxide Octahydrate
+What is the first movie ever to be rated PG-13?
+Ferris Bueller's Day Off
+E.T.
+The Red Dawn
+Star Wars: The Empire Strikes Back
+July 4, 1776
+$50 Bill
+Virginia
+New York
+Abraham Lincoln
+Ring Road
+Robert E. Johnson
+Fall 2018
+50/50
+8,513
+C
+Alan Turing
+n * lg(n)
+Sun Microsystems
+25
+Brazil
+Kazakhstan
+Canada
+Mount Chimborazo
+Peru and Bolivia
+2
+The Social Network
+365
+Carbonite
+The Red Dawn
