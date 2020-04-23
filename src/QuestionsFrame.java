@@ -154,21 +154,9 @@ public class QuestionsFrame {
 					ans = rdbtnNewRadioButton_1_1.getText().replaceAll("<html>", "").replaceAll("</html>", "");
 				}
 				if(correct.equals(ans)) {
-					if(PlayerTurn.isState(PlayerTurn.Player_1)) {
-						Players.score1 = Players.score1 + points;
-						PlayerTurn.setTurn(PlayerTurn.Player_2);
-					} else if(PlayerTurn.isState(PlayerTurn.Player_2)) {
-						Players.score2 = Players.score2 + points;
-						PlayerTurn.setTurn(PlayerTurn.Player_1);
-					}
+					Players.addPoints(points);
 				} else {
-					if(PlayerTurn.isState(PlayerTurn.Player_1)) {
-						Players.score1 = Players.score1 - (points/2);
-						PlayerTurn.setTurn(PlayerTurn.Player_2);
-					} else if(PlayerTurn.isState(PlayerTurn.Player_2)) {
-						Players.score2 = Players.score2 - (points/2);
-						PlayerTurn.setTurn(PlayerTurn.Player_1);
-					}
+					Players.removePoints(points);
 				}
 				TriviaGame.lblNewLabel_6.setText("Player 1 Score: " + Players.score1);
 				TriviaGame.lblNewLabel_6_1.setText("Player 2 Score: " + Players.score2);
@@ -177,14 +165,7 @@ public class QuestionsFrame {
 				TriviaGame.isQUp = false;
 				Players.gameCount++;
 				if(Players.gameCount == 25) {
-					if(Players.max(Players.score1, Players.score2) == 1) {
-						TriviaGame.lblNewLabel_5.setText("Player 1 wins!");
-					} else if(Players.max(Players.score1, Players.score2) == 2) {
-						TriviaGame.lblNewLabel_5.setText("Player 2 wins!");
-					} else {
-						TriviaGame.lblNewLabel_5.setText("The game is tied!");
-					}
-					
+					Players.getWinner();
 				}
 			}
 		});

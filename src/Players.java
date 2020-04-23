@@ -19,5 +19,38 @@ public class Players {
 			return 0;
 		}
 	}
+	
+	public static int getWinner() {
+		if(max(score1, score2) == 1) {
+			TriviaGame.lblNewLabel_5.setText("Player 1 wins!");
+			return 1;
+		} else if(Players.max(score1, score2) == 2) {
+			TriviaGame.lblNewLabel_5.setText("Player 2 wins!");
+			return 2;
+		} else {
+			TriviaGame.lblNewLabel_5.setText("The game is tied!");
+			return 0;
+		}
+	}
+	
+	public static void addPoints(int points) {
+		if(PlayerTurn.isState(PlayerTurn.Player_1)) {
+			Players.score1 = Players.score1 + points;
+			PlayerTurn.setTurn(PlayerTurn.Player_2);
+		} else if(PlayerTurn.isState(PlayerTurn.Player_2)) {
+			Players.score2 = Players.score2 + points;
+			PlayerTurn.setTurn(PlayerTurn.Player_1);
+		}
+	}
+	
+	public static void removePoints(int points) {
+		if(PlayerTurn.isState(PlayerTurn.Player_1)) {
+			Players.score1 = Players.score1 - (points/2);
+			PlayerTurn.setTurn(PlayerTurn.Player_2);
+		} else if(PlayerTurn.isState(PlayerTurn.Player_2)) {
+			Players.score2 = Players.score2 - (points/2);
+			PlayerTurn.setTurn(PlayerTurn.Player_1);
+		}
+	}
 
 }

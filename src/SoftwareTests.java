@@ -3,10 +3,10 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-class ConsistentcyTest {
+class SoftwareTests {
 
 	@Test
-	void test() {
+	void reliabilityTests() {
 		TriviaGame.main(null);
 		QuestionList.read();
 		
@@ -30,6 +30,23 @@ class ConsistentcyTest {
 			assertTrue(QuestionList.MOV.get(i), QuestionList.MOV.get(i).endsWith("?"));
 		}
 		
+	}
+	
+	@Test
+	void completenessTest() {
+		TriviaGame.main(null);
+		int s1 = Players.score1;
+		int s2 = Players.score2;
+		
+		Players.addPoints(300);
+		
+		assertEquals(s1 + 300, Players.score1);
+		
+		PlayerTurn.setTurn(PlayerTurn.Player_2);
+		
+		Players.removePoints(300);
+		
+		assertEquals(s2 - 150, Players.score2);
 	}
 
 }
