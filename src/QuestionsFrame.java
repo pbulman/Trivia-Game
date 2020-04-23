@@ -163,10 +163,10 @@ public class QuestionsFrame {
 					}
 				} else {
 					if(PlayerTurn.isState(PlayerTurn.Player_1)) {
-						Players.score1 = Players.score1 - points;
+						Players.score1 = Players.score1 - (points/2);
 						PlayerTurn.setTurn(PlayerTurn.Player_2);
 					} else if(PlayerTurn.isState(PlayerTurn.Player_2)) {
-						Players.score2 = Players.score2 - points;
+						Players.score2 = Players.score2 - (points/2);
 						PlayerTurn.setTurn(PlayerTurn.Player_1);
 					}
 				}
@@ -174,6 +174,18 @@ public class QuestionsFrame {
 				TriviaGame.lblNewLabel_6_1.setText("Player 2 Score: " + Players.score2);
 				TriviaGame.lblNewLabel_5.setText("Turn: " + PlayerTurn.getTurn().toString().replaceAll("_", " "));
 				frameQ.dispatchEvent(new WindowEvent(frameQ, WindowEvent.WINDOW_CLOSING));
+				TriviaGame.isQUp = false;
+				Players.gameCount++;
+				if(Players.gameCount == 25) {
+					if(Players.max(Players.score1, Players.score2) == 1) {
+						TriviaGame.lblNewLabel_5.setText("Player 1 wins!");
+					} else if(Players.max(Players.score1, Players.score2) == 2) {
+						TriviaGame.lblNewLabel_5.setText("Player 2 wins!");
+					} else {
+						TriviaGame.lblNewLabel_5.setText("The game is tied!");
+					}
+					
+				}
 			}
 		});
 		
